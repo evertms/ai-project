@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;  /* Change to column layout */
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;  /* Add space between sections */
+}
+
+.input-methods {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+/* Optional: Style the file input to match the design */
+.file-input {
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.camera-container, 
+.preview-container, 
+.result-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.preview-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#webcam-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#previewCanvas {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.camera-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.prediction-item {
+    width: 100%;
+    max-width: 300px;
+}
+
+#webcam {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.reset-btn {
+    display: block;
+    margin: 15px auto;
+    background-color: #e74c3c;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+.predict-btn {
+    background-color: #27ae60;
+    margin-right: 10px;
+}
+
+.predict-btn:hover {
+    background-color: #219a52;
+}
+
+
+.camera-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.stop-btn {
+    background-color: #95a5a6;
+}
+
+.stop-btn:hover {
+    background-color: #7f8c8d;
+}

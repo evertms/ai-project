@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de Útiles Escolares</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">¡Aprende inglés con tus útiles escolares!</h1>
+    <div class="container">        
+        <div class="input-methods">
+            <button type="button" onclick="init()" class="btn" id="startCamera">Iniciar Cámara</button>
+            <p>o</p>
+            <input type="file" id="imageUpload" accept="image/*" class="file-input" />
+        </div>
+
+        <div class="main-content">
+            <div class="camera-container">
+                <div id="webcam-container"></div>
+                <div class="camera-controls">
+                    <button id="captureBtn" class="btn" onclick="captureImage()" style="display: none;">Tomar Foto</button>
+                    <button id="stopCameraBtn" class="btn stop-btn" onclick="stopCamera()" style="display: none;">Apagar Cámara</button>
+                </div>
+            </div>
+            
+            <div class="preview-container">
+                <canvas id="previewCanvas" style="display: none;"></canvas>
+                <button id="predictBtn" class="btn predict-btn" onclick="predictFromButton()" style="display: none;">Predecir</button>
+                <button id="resetBtn" class="btn reset-btn" onclick="resetCapture()" style="display: none;">Volver a intentar</button>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div id="label-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
